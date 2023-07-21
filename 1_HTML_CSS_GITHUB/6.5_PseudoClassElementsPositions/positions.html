@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITIONS</title>
+
+
+    <style>
+        .empty-space {
+            height: 1500px;
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+        }
+
+        /* ABSOLUTE: ACTUALLY MOVE IN RELATION TO PARENT */
+        .red {
+            background-color: red;
+            position: absolute;
+
+        }
+
+        /* RELATIVE: ONLY MOVES IN APPEARANCE IN RELATION TO PARENT */
+        .blue {
+            background-color: blue;
+            position: relative;
+            left: 50px;
+            top: -30px;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .purple {
+            background-color: purple;
+            position: sticky;
+            top: 50px;
+        }
+
+        .teal {
+            background-color: teal;
+            position: fixed;
+            top: 200px;
+            left: 50px;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h3>Positions</h3>
+
+    <ol>
+        <h4>Flow Related</h4>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <h4>SCROLL RELATED</h4>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="purple"></div>
+
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="teal"></div>
+
+    <div class="cyan"></div>
+
+
+    <div class="empty-space"></div>
+
+</body>
+
+</html>

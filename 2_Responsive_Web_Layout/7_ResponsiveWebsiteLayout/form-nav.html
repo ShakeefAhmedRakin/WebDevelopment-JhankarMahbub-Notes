@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Nav</title>
+
+
+    <style>
+        nav a {
+            list-style: none;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container{
+            display: flex;
+            justify-content: center;
+            border: 2px solid red;
+            height: 80vh;
+            align-items: center;
+        }
+
+        .loginform {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        .loginform input {
+            margin-bottom: 15px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <span>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+        </span>
+        <a href="">Login</a>
+
+    </nav>
+
+    <div class="form-container">
+        <form class="loginform">
+            <h3>Please Login</h3>
+            <input type="email" placeholder="Your Email" required>
+            <input type="password" placeholder="Your Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

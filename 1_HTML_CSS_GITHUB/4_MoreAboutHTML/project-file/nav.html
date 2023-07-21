@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+
+
+        /* KEEP IN NAV CSS */
+        
+        nav > ul{
+            display: flex;
+        }
+
+        nav li{
+            list-style: none;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        nav li a{
+            text-decoration: none;
+            color: brown;
+        }
+
+        nav li:hover{
+            background-color: gray;
+        }
+
+        nav li .dropdown{
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            padding-left: 10px;
+        }
+
+        nav li:hover > .dropdown{
+            display: block;
+            position: absolute;
+            background-color: bisque;
+            padding-left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="nav.html">Nav</a></li>
+                <li><a>DropDown</a>
+                    <ul class="dropdown">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="nav.html">Nav</a></li>
+                        <li><a href="">Second Dropdown</a>
+                            <ul class="dropdown">
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="index.html">Index</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="nav.html">Nav</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h3>SAMPLE TITLE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quasi saepe soluta, et consectetur laboriosam deserunt? Ratione, error sed ipsam nemo rerum ipsa, molestiae voluptates aspernatur, mollitia in debitis pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque sed architecto. Animi, aliquam corrupti incidunt voluptatum enim qui ipsum dolorem odit eligendi ipsa maxime sequi non iste commodi ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, in. Sequi reiciendis consequatur, accusamus suscipit odit minima eius veritatis at est eligendi distinctio repudiandae quibusdam omnis aperiam, dolorem officia neque.</p>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: monospace;
+            padding: 20px;
+        }
+
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+
+        .box{
+            background-color: slategray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+        @media screen and (max-width:576px) {
+
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h3>Box - 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio architecto iure non. Quisquam quod enim laudantium, nemo rerum accusamus excepturi consequuntur, quaerat sed illum odit, ullam saepe sint accusantium velit!
+            Minus, quidem in accusamus accusantium quisquam voluptatum ex? Quasi exercitationem quis dicta cumque hic voluptates quibusdam labore. Expedita distinctio voluptatum quo! Qui voluptatum cum nobis, voluptates dignissimos facilis eveniet voluptatibus!
+            Magnam, non unde. Itaque ad eius id voluptatum quod nobis illum ut molestiae porro amet blanditiis dolores laboriosam, minima minus ducimus eligendi omnis modi! Harum eos labore omnis inventore? Exercitationem!
+            Numquam quibusdam neque veniam laboriosam debitis rerum expedita ipsa repellat saepe libero, voluptas enim atque sed aliquid officiis sunt optio reprehenderit totam id? Molestias quasi sapiente repellendus fugit eum facere!
+            Ab dignissimos architecto sed inventore enim totam assumenda adipisci pariatur aspernatur? Dolore nisi est odit vel, voluptatibus ipsa consectetur cumque aperiam animi reiciendis cupiditate cum facere assumenda, suscipit aliquam quod.</p>
+        </div>
+        <div class="box">
+            <h3>Box - 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio architecto iure non. Quisquam quod enim laudantium, nemo rerum accusamus excepturi consequuntur, quaerat sed illum odit, ullam saepe sint accusantium velit!
+                Minus, quidem in accusamus accusantium quisquam voluptatum ex? Quasi exercitationem quis dicta cumque hic voluptates quibusdam labore. Expedita distinctio voluptatum quo! Qui voluptatum cum nobis, voluptates dignissimos facilis eveniet voluptatibus!
+                Magnam, non unde. Itaque ad eius id voluptatum quod nobis illum ut molestiae porro amet blanditiis dolores laboriosam, minima minus ducimus eligendi omnis modi! Harum eos labore omnis inventore? Exercitationem!
+                Numquam quibusdam neque veniam laboriosam debitis rerum expedita ipsa repellat saepe libero, voluptas enim atque sed aliquid officiis sunt optio reprehenderit totam id? Molestias quasi sapiente repellendus fugit eum facere!
+                Ab dignissimos architecto sed inventore enim totam assumenda adipisci pariatur aspernatur? Dolore nisi est odit vel, voluptatibus ipsa consectetur cumque aperiam animi reiciendis cupiditate cum facere assumenda, suscipit aliquam quod.</p>
+        </div>
+    </div>
+
+
+    <div class="container-2">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+    </div>
+
+</body>
+
+</html>

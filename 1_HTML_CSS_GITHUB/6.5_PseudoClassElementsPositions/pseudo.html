@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        h1 {
+            color: black;
+        }
+
+
+        /* mouse over */
+        h1:hover {
+            color: brown;
+        }
+
+
+        /* focusing */
+        input:focus {
+            color: red;
+            outline: 0;
+            border: 1px solid blue;
+        }
+
+
+        a:visited {
+            color: red;
+        }
+
+        /* li:last-child{
+            color: red;
+        }
+
+        li:first-child{
+            color: green;
+        }
+     */
+
+        li:nth-child(2n) {
+            color: red;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Testing Hover Class</h1>
+
+    <hr>
+
+    <input type="text" placeholder="testing focus">
+
+    <hr>
+
+    <a href="#">Testing Visited</a>
+
+    <hr>
+
+    <ul>
+        <li>Testing</li>
+        <li>Nth</li>
+        <li>Childs</li>
+        <li>Item #1</li>
+        <li>Item #2</li>
+    </ul>
+
+
+
+
+
+
+</body>
+
+</html>

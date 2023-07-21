@@ -1,0 +1,28 @@
+1) create repo at github's website
+
+2) create local repo folder
+
+3) git init
+
+4) git add . 
+
+5) git commit -m "comment"
+
+6) git branch -M main 
+
+7) git remote add origin link
+
+8) git push -u origin main
+
+
+-----------------------------------------
+
+FOR INCREMENTAL CHANGES
+
+1) git add .
+2) git commit -m "comment"
+3) git push
+
+----------------------------------------
+
+

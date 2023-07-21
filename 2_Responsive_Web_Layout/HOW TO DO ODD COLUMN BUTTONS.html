@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+
+      /* HERE, COL = 10 */
+      /*  */
+
+      .box {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+      }
+
+      .box {
+        grid-column: span 2;
+      }
+
+      /* FOR THE OFFSET  */
+      /* n - col/2 + 2 */
+
+      .box:nth-child(6) {
+        grid-column: 2 / span 2;
+      }
+
+      button {
+        padding: 30px 60px;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 50px;
+        background-color: rgb(116, 116, 247);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>No Press Here</button>
+      </div>
+      <div class="box">
+        <button>press here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+      <div class="box">
+        <button>Press Here</button>
+      </div>
+    </div>
+  </body>
+</html>

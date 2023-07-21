@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+
+.blog{
+    background-color: antiquewhite;
+    border: 5px solid brown;
+    border-radius: 10px;
+    margin: 30px 30px 30px 30px; 
+    /* all */
+    /* top-bottom left-right */
+    /* top left-right bottom */
+    /* top right bottom left */
+    padding: 20px;
+
+    /* box-shadow: 10px 10px 10px brown; */
+    /* x y spread color */
+}
+
+
+h3{
+    font: 30px;
+    text-decoration:wavy;
+}
+
+.first{
+    /* removes completely */
+    /* display: none;  */
+
+    /* renders invisible */
+    /* visibility: hidden;  */
+}
+
+
+.consectetur{
+    border: 2px solid red;
+    margin: 10px;
+}
+
+

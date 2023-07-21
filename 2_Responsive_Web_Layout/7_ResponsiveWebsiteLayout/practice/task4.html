@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+        }
+
+        body{
+            padding: 50px;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+        .post{
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            gap: 30px;
+            background-color: rgb(248, 248, 248);
+            margin-bottom: 50px;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+
+        .post h3,p,button{
+            margin-top: 10px;
+        }
+
+        .post button{
+            background-color: rgb(79, 79, 245);
+            color: white;
+            border: 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:977px) {
+            .post{
+            grid-template-columns: 1fr;
+        }
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="post-container">
+
+            <div class="post">
+                <div class="img-container">
+                    <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000"
+                        alt="">
+                </div>
+                <div class="text-container">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, recusandae doloribus! Quo laudantium dolor delectus quasi non nihil. Commodi veniam nostrum illo nesciunt sit dolore, excepturi assumenda quasi perspiciatis provident.
+                    Sequi natus quod laboriosam? Modi accusantium, neque nostrum provident distinctio voluptate nemo quae corrupti tenetur saepe necessitatibus sit debitis dolores facere sequi hic porro. Harum tenetur nesciunt magni adipisci ex.
+                    Minus cum maiores, nisi aspernatur eum aliquam rerum officia, pariatur nihil blanditiis distinctio quo? Error beatae ullam eos hic sunt, facilis ipsam nostrum, natus similique blanditiis in, ea dicta officia?
+                     </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="img-container">
+                    <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000"
+                        alt="">
+                </div>
+                <div class="text-container">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, recusandae doloribus! Quo laudantium dolor delectus quasi non nihil. Commodi veniam nostrum illo nesciunt sit dolore, excepturi assumenda quasi perspiciatis provident.
+                    Sequi natus quod laboriosam? Modi accusantium, neque nostrum provident distinctio voluptate nemo quae corrupti tenetur saepe necessitatibus sit debitis dolores facere sequi hic porro. Harum tenetur nesciunt magni adipisci ex.
+                    Minus cum maiores, nisi aspernatur eum aliquam rerum officia, pariatur nihil blanditiis distinctio quo? Error beatae ullam eos hic sunt, facilis ipsam nostrum, natus similique blanditiis in, ea dicta officia?
+                     </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>

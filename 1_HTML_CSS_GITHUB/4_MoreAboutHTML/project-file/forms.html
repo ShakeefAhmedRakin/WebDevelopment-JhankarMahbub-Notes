@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        label{
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+
+
+        <section>
+            <h2>Form Stuff</h2>
+
+            <form action="">
+                <label for="">Your Name
+                    <input type="text" placeholder="Your Name">
+                </label>
+                <label for="">Your Email
+                    <input type="email" placeholder="Your Email">
+                </label>
+
+                <label for="">Your Phone
+                    <input type="text" placeholder="Your Phone">
+                </label>
+
+                <fieldset>
+                    <legend>Pick One Game</legend>
+                    <label for="Minecraft">
+                        <input type="radio" name="game">Minecraft
+                    </label>
+                    <label for="CSGO">
+                        <input type="radio" name="game">CSGO
+                    </label>
+                    <label for="Valorant">
+                        <input type="radio" name="game">Valorant
+                    </label>
+                    <label for="Tactics Ogre">
+                        <input type="radio" name="game" id="">Tactics Ogre
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick One or More Games</legend>
+                    <label for="Minecraft">
+                        <input type="checkbox" name="games">Minecraft
+                    </label>
+                    <label for="CSGO">
+                        <input type="checkbox" name="games">CSGO
+                    </label>
+                    <label for="Valorant">
+                        <input type="checkbox" name="games">Valorant
+                    </label>
+                    <label for="Tactics Ogre">
+                        <input type="checkbox" name="games" id="">Tactics Ogre
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <input type="reset" value="Empty All Fields">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+    <footer></footer>
+
+    
+</body>
+</html>

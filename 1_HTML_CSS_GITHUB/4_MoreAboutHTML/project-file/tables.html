@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        td{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table</h1>
+    <table>
+        <caption>Employee Salary Data</caption>
+        <thead> 
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Larry Page</td>
+                <td>Google</td>
+                <td>$10300</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Steve Jobs</td>
+                <td>Apple</td>
+                <td>$12000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Employee: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
