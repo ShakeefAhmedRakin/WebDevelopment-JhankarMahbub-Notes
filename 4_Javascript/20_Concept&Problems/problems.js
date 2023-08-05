@@ -105,3 +105,10 @@ function leapChecker(year) {
     return "Not a Leap Year!";
   }
 }
+
+
+var a=2; 
+var b=3; 
+if(a<b){
+	console.log("Hello");
+}
