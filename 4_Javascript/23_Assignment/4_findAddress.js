@@ -21,6 +21,8 @@ function findAddress(obj) {
   return output;
 }
 
+
+
 let testobj1 = { street: 10, house: "15A", society: "Earth Perfect" };
 let testobj2 = { street: 10, society: "Earth Perfect" };
 let testobj3 = { street: 10 };
@@ -28,3 +30,4 @@ let testobj3 = { street: 10 };
 console.log(findAddress(testobj1));
 console.log(findAddress(testobj2));
 console.log(findAddress(testobj3));
+

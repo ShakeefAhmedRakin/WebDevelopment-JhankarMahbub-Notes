@@ -1,8 +1,7 @@
 function sortMaker(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < 0) {
-      return "Invalid Input";
-    }
+  
+  if (arr[0]<0 || arr[1]<0){
+    return "Invalid Input"
   }
 
   if (arr[1] == arr[0]) {
