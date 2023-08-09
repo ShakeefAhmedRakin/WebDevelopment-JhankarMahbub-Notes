@@ -58,3 +58,10 @@ console.log("#-JOINING------------------#");
 const lines = ["one", "two", "three"];
 
 console.log(lines.join(":"));
+
+
+let sum=0; 
+for( let i = 0; i<=3;i++){ 
+sum = sum + i; 
+}
+console.log(sum);
