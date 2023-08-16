@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing Elements</title>
+    <style>
+
+        .bg-yellow{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>In JS css attributes like</h1>
+    <ul>
+      <li>background-color becomes backgroundColor</li>
+      <li>margin-top becomes marginTop</li>
+    </ul>
+
+    <h2 id="heading" class="heading second bg-color">
+      We're gonna change this h2 Tag with JS
+    </h2>
+
+    <hr />
+    <h3>innerText vs innerHTML</h3>
+    <ul>
+      <li>
+        Shows the innerTexts <b>|</b> Shows the Raw HTML code including
+        tagNames, classes etc
+      </li>
+      <hr />
+      <h4>Let's say the content inside the div is commented out. So,</h4>
+      <hr />
+      <li>
+        Gives an empty string <b>|</b> Shows the raw coding which is the
+        commented out HTML
+      </li>
+    </ul>
+
+    <hr />
+
+    <section id="first-section">
+      <h2>An h2 tag which is inside section 1</h2>
+    </section>
+
+    <hr>
+
+    <section id="second-section">
+      <h2>An h2 tag which is inside section 2</h2>
+    </section>
+
+    <script src="changingAttributes.js"></script>
+  </body>
+</html>

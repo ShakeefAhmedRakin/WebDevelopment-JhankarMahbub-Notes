@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeting Elements of DOM</title>
+    <style>
+      h1 {
+        color: red;
+      }
+
+      #second-title{
+        color:black;
+      }
+
+      .list-item{
+        color: aqua;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to DOM</h1>
+    </header>
+    <main>
+      <h1>Targeting DOM Items using Tag Name</h1>
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+      </ul>
+      <hr>
+      <h1 id="second-title">Targeting DOM Items using ID</h1>
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+      </ul>
+      <hr>
+      <h1 id="third-title">Targeting DOM Items using classes</h1>
+      <ul>
+        <li class="list-item">Item-1</li>
+        <li class="list-item">Item-2</li>
+        <li class="list-item">Item-3</li>
+      </ul>
+
+      <hr>
+
+      <h1 class="fourth-title">Targeting DOM Items using Query Selector</h1>
+
+      <ul class="fourth-list-container">
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+      </ul>
+
+      <hr>
+
+      <h3>Looking up a non-existing ID gives you 'NULL'</h3>
+      <h3>Looking up a non-existing className gives you 'an empty collection'</h3>
+      <h3>Looking up a non-existing query gives you 'an empty nodeList'</h3>
+
+      <hr>
+
+      <h2></h2>
+
+
+
+
+    </main>
+
+    <script src="targetingElements.js"></script>
+
+  </body>
+</html>
