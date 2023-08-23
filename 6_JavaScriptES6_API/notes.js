@@ -59,3 +59,29 @@ const doMath = (a, b, c) => {
 
 console.log(doMath(2, 3, 4));
 console.log("---------------------------");
+
+// SOME QUICK OPERATIONS
+// THIS DOES NOT TAKE IN ARRAYS
+console.log(Math.max(3, 5, 6, 3));
+// SO HOW DO WE INPUT AN ARRAY? USE A SPREAD OPERATOR
+let arrayOfNumbers = [4, 3, 6, 1, 2, 4];
+console.log(...arrayOfNumbers);
+console.log(Math.max(...arrayOfNumbers));
+console.log("---------------------------");
+// NON-PRIMITIVE VARIABLES LIKE ARRAYS AND OBJECTS HOLD THE SAME REFERENCE
+// E.G
+let listOne = [1, 2, 3];
+let listTwo = listOne;
+listTwo.push(4);
+// THEY'RE THE SAME
+console.log(listOne);
+console.log(listTwo);
+
+// HOW TO AVOID THIS? USE SPREAD OPERATOR. LIKE SO,
+listOne = [1, 2, 3];
+// ANOTHER WAY TO PUSH IN ELEMENTS
+listTwo = [...listOne, 4];
+listTwo.push(5);
+// THEY'RE THE SAME
+console.log(listOne);
+console.log(listTwo);
