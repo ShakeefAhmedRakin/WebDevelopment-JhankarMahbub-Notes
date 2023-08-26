@@ -30,4 +30,15 @@ The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__titl
 
 Feel free to explore the repository to reinforce your understanding of the concepts covered in the course.
 
+## Get Started
+
+To get started, you can clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub.git
+```
+
+
+
+
 
