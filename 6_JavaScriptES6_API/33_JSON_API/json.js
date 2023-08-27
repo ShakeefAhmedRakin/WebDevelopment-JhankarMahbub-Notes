@@ -36,8 +36,10 @@ You can go to https://jsonplaceholder.typicode.com/
 for sample JSON files to fetch and use as dummy data.
 */
 
+console.log("----------------------------------------------------------------");
 // FETCH FUNCTION TAKES A URL AND RETURNS SOMETHING ACCORDING TO THE URL TO A VARIABLE CALLED RESPONSE.
 fetch("https://jsonplaceholder.typicode.com/todos/1")
-  // IF RESPONSE IS RECEIVED, THEN, IT IS CONVERTED TO JSON.
+  // IF RESPONSE IS RECEIVED, THEN, IT CONVERTS THE DATA TO JSON OBJECT
+  //   THIS IS A CONCEPT OF PROMISE WHICH WILL BE COVERED LATER
   .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then((json) => console.log(typeof json));
