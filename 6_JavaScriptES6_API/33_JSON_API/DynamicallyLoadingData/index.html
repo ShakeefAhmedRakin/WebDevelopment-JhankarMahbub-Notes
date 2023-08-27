@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* <h4 class="user-id">User: ${post.id}</h2>
+    <h5 class="post-title>Title: ${post.title}</h3>
+    <p class="post-body">${post.body}</p>`; */
+
+      #posts-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .post-div {
+        background-color: rgb(216, 216, 216);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .post-body {
+        max-width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>All Posts</h1>
+    </header>
+    <main>
+      <section>
+        <div id="posts-container"></div>
+      </section>
+    </main>
+
+    <script src="fetch.js"></script>
+  </body>
+</html>
