@@ -15,7 +15,5 @@ FALSE :
 
 */
 
-
 //  CHECK FALSE WITH !variable
 // CHECK TRUE WITH !!variable
-
