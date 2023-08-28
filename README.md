@@ -24,7 +24,7 @@ The course is structured using milestones that have various modules to provide a
 ## Repository Contents
 
 This repository is a collection of my notes, code snippets, and links to my project implementations based on the course curriculum. Each milestone has modules in them. <br>
-The folders are named as "**milestoneNumber****title\_" > "**moduleNumber****title\_"
+The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__title_"
 
 Feel free to explore the repository to reinforce your understanding of the concepts covered in the course.
 
