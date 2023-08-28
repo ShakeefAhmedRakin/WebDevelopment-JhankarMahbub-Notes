@@ -1,6 +1,6 @@
 # Complete Web Development Course With Jhankar Mahbub - Course Notes
 
-> **To be Noted** > <br>
+> **To be Noted**<br>
 > _The content in this repository does not contain any content or media from the course itself. Therefore, it is not a substitute for the official course materials provided by Programming Hero. The materials and notes in this repository are based on my personal learning journey and are intended for educational purposes only._
 
 ![image](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/assets/112527326/b62607bc-c2c2-45ee-a9f1-b2acb742ce02)
