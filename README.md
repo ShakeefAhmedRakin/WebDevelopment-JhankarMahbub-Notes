@@ -24,7 +24,15 @@ The course is structured using milestones that have various modules to provide a
 ## Repository Contents
 
 This repository is a collection of my notes, code snippets, and links to my project implementations based on the course curriculum. Each milestone has modules in them. <br>
-The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__title_"
+The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__title_". <br>
+
+- Milestone One : [HTML-CSS-GITHUB](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/1_HTML_CSS_GITHUB/summary.md)
+- Milestone Two : [Responsive-Web-Layout](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/2_Responsive_Web_Layout/summary.md)
+- Milestone Three : [TailWind](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/3_TailWind/summary.md)
+- Milestone Four : [JavaScript](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/4_Javascript/summary.md)
+- Milestone Five : [Document-Object-Model](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/5_DOM/summary.md)
+- Milestone Six : [JavaScriptES6-API](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/6_JavaScriptES6_API/summary.md)
+
 
 Feel free to explore the repository to reinforce your understanding of the concepts covered in the course.
 
