@@ -48,8 +48,6 @@
 
 ## HOW DOES JAVASCRIPT WORK?
 
-Certainly, let's delve into the internal mechanism of the JavaScript engine V8:
-
 - **V8 Engine**: V8, written in C++, is a high-performance JavaScript engine developed by Google, primarily used in the Chrome browser and Node.js. It compiles JavaScript code into machine code for efficient execution.
 
 - **Execution Context**: An execution context is a crucial concept in V8. It's an environment in which JavaScript code is executed. Each time a function is invoked, a new execution context is created. It consists of the Variable Environment (scope), Lexical Environment (where variables are declared), and the `this` value.
