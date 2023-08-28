@@ -10,6 +10,28 @@
 - **Client-Side Validation**: Validate user inputs before sending data to the server.
 - **API Interaction**: Interact with APIs to fetch or send data without refreshing the page.
 
+## Documentations
+
+1. **MDN Web Docs - JavaScript**:
+   - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+   - [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
+2. **FreeCodeCamp**:
+   - [JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+
+3. **W3Schools JavaScript Tutorial**:
+   - [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
+
+4. **JavaScript.info**:
+   - [JavaScript.info](https://javascript.info/)
+
+5. **Eloquent JavaScript** by Marijn Haverbeke:
+   - [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+6. **Modern JavaScript Tutorial**:
+    - [Modern JavaScript Tutorial](https://javascript.info/)
+
+
 ##
 
 **Variables and Their Types:**
