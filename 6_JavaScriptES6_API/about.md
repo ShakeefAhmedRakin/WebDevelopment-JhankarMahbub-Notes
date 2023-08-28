@@ -18,6 +18,16 @@
 
 - **Class, objects, inheritance, prototyping**: Classes are blueprints for creating objects with shared properties and methods. Inheritance allows one class to inherit properties/methods from another. Prototyping is a mechanism where objects can share properties through their prototypes.
 
+- **Scopes**: Scopes define the accessibility and visibility of variables in different parts of your code. JavaScript has function scope and block scope (introduced with `let` and `const`), where variables defined within a scope are accessible only within that scope unless nested scopes are involved.
+
+- **Callback**: A callback is a function passed as an argument to another function. It's used to ensure that a particular code block executes only after a certain operation or task is completed.
+
+- **Closure**: A closure is a function that remembers and accesses variables from its outer (enclosing) scope even after that scope has finished executing. This allows for maintaining state across function calls.
+
+- **Encapsulation**: Encapsulation is a principle of wrapping data (variables) and the methods that operate on the data into a single unit (object or class). This helps in hiding implementation details and controlling access to the data.
+
+- **Truthy and Falsy**: JavaScript treats values in Boolean contexts (like conditionals) as either "truthy" (evaluates to `true`) or "falsy" (evaluates to `false`). Falsy values include `false`, `0`, `""`, `null`, `undefined`, and `NaN`. Everything else is considered truthy.
+
 - **API usage in JavaScript**: APIs (Application Programming Interfaces) are sets of rules for interacting with software components. In JavaScript, APIs are used to communicate with external services, libraries, or platforms.
 
 - **HTTP methods (GET, POST, PATCH, DELETE, PUT)**: These are HTTP request methods used to interact with resources on a server. `GET` retrieves data, `POST` sends data to create, `PATCH` updates parts, `DELETE` removes, `PUT` updates entire resources.
@@ -35,3 +45,29 @@
 5. **Dynamically typed**: Variables in JavaScript are not bound to a specific data type at declaration; their types can change during runtime, making the language flexible but requiring careful handling to prevent unexpected behavior.
 
 6. **Prototyped based**: JavaScript employs prototype-based object-oriented programming, where objects can directly inherit properties and behaviors from other objects, allowing for dynamic and flexible object relationships.
+
+## HOW DOES JAVASCRIPT WORK?
+
+Certainly, let's delve into the internal mechanism of the JavaScript engine V8:
+
+- **V8 Engine**: V8, written in C++, is a high-performance JavaScript engine developed by Google, primarily used in the Chrome browser and Node.js. It compiles JavaScript code into machine code for efficient execution.
+
+- **Execution Context**: An execution context is a crucial concept in V8. It's an environment in which JavaScript code is executed. Each time a function is invoked, a new execution context is created. It consists of the Variable Environment (scope), Lexical Environment (where variables are declared), and the `this` value.
+
+- **Call Stack**: The call stack is a data structure that tracks the execution of functions in a program. It follows the Last-In-First-Out (LIFO) principle. As functions are invoked, their execution contexts are pushed onto the stack, and when a function completes, its context is popped off the stack.
+
+- **Single-Threaded**: V8 is a single-threaded engine, meaning it processes one task at a time in a single sequence. This contrasts with multi-threaded engines that can handle multiple tasks concurrently. While V8 itself is single-threaded, web browsers and environments like Node.js can use multiple threads for various tasks.
+
+Here's how these components work together:
+
+1. **Execution Context Creation**: When a function is called, an execution context is created. It includes the function's scope, variables, arguments, and the reference to the outer environment.
+
+2. **Call Stack**: As functions are invoked, their execution contexts are added to the call stack. The current function at the top of the stack is the one being executed.
+
+3. **Execution**: The top function on the call stack is executed. If it calls other functions, their contexts are added to the stack, forming a stack of nested function calls.
+
+4. **Completion**: When a function finishes execution, its context is removed from the call stack, allowing the previous function to resume.
+
+5. **Event Loop**: JavaScript's single-threaded nature doesn't mean it can't handle asynchronous operations. Asynchronous tasks like timers or I/O operations are managed using the event loop, which checks the queue for tasks to execute when the call stack is empty.
+
+This mechanism ensures that JavaScript code executes in a predictable order, without concurrency-related issues that can arise in multi-threaded environments.
