@@ -1,4 +1,0 @@
-BONUS:
-WHEN PRESSING MAKE PURCHASE: SHOW MODAL THAT HAS A BUTTON THAT RESETS THE PAGE.
-MAKE MOBILE/TABLET RESPONSIVEs
-https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShakeefAhmedRakin
