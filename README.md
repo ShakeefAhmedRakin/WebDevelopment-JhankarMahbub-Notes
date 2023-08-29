@@ -43,5 +43,5 @@ Feel free to explore the repository to reinforce your understanding of the conce
 To get started, you can clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub.git
+git clone https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub-Notes.git
 ```
