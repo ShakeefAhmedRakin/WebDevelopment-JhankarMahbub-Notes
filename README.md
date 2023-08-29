@@ -1,5 +1,7 @@
 # Complete Web Development Course With Jhankar Mahbub - Course Notes
 
+> :warning: All graded assignments will be private until the end of the course.
+> 
 > **To be Noted**<br>
 > _The content in this repository does not contain any content or media from the course itself. Therefore, it is not a substitute for the official course materials provided by Programming Hero. The materials and notes in this repository are based on my personal learning journey and are intended for educational purposes only._
 
