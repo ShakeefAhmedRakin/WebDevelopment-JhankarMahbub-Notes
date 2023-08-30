@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+      gap: 10px;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    input {
+      width: 250px;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+  <body>
+    <h1>How to implement error handling</h1>
+    <input type="text" id="age" placeholder="Enter Age between 18 and 30" />
+    <button type="submit" id="btn-click">submit</button>
+    <p id="error">-</p>
+
+    <script>
+      const button = document.getElementById("btn-click");
+
+      const checkAge = () => {
+        const ageField = document.getElementById("age");
+        const ageText = ageField.value;
+        const errorTag = document.getElementById("error");
+
+        try {
+          const age = parseInt(ageText);
+          if (isNaN(age)) {
+            throw "Invalid input. Please enter a number.";
+          }
+          if (age < 18) {
+            throw "You are under 18 years old.";
+          }
+
+          if (age > 30) {
+            throw "You are over 30 years old.";
+          }
+
+          //   IF THERE IS NO ERROR, CLEAR THE INNER HTML IF THERE IS NO ERROR
+
+          errorTag.innerHTML = "-";
+        } catch (err) {
+          errorTag.innerHTML = "ERROR: " + err;
+        } finally {
+          // THIS RUNS NO MATTER WHAT
+          console.log("All Done!");
+        }
+      };
+
+      button.addEventListener("click", checkAge);
+    </script>
+  </body>
+</html>
