@@ -347,3 +347,83 @@ I am not following the stack. // Printed after waiting for 1 second
 
 This showcases how the event loop enables the program to continue executing code while waiting for asynchronous operations to complete. It creates an illusion of concurrency, even though JavaScript is single-threaded. The event loop ensures that tasks are executed in the order they were added to the event queue while allowing non-blocking asynchronous operations to run alongside other code.
 
+
+## Error Handling with Try, Catch, and Finally
+
+In JavaScript, error handling is a crucial aspect of ensuring that your code can gracefully handle unexpected situations or exceptions. The `try`, `catch`, and `finally` statements, along with the `throw` statement, allow you to create structured error-handling mechanisms in your code.
+
+**Example Code:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags and styling... -->
+</head>
+<body>
+  <h1>How to implement error handling</h1>
+  <input type="text" id="age" placeholder="Enter Age between 18 and 30" />
+  <button type="submit" id="btn-click">submit</button>
+  <p id="error">-</p>
+
+  <script>
+    // DOM element references...
+    
+    const checkAge = () => {
+      const ageField = document.getElementById("age");
+      const ageText = ageField.value;
+      const errorTag = document.getElementById("error");
+
+      try {
+        const age = parseInt(ageText);
+        if (isNaN(age)) {
+          throw "Invalid input. Please enter a number.";
+        }
+        if (age < 18) {
+          throw "You are under 18 years old.";
+        }
+        if (age > 30) {
+          throw "You are over 30 years old.";
+        }
+
+        // Clear the error message if no error
+        errorTag.innerHTML = "-";
+      } catch (err) {
+        // Handle errors and display them
+        errorTag.innerHTML = "ERROR: " + err;
+      } finally {
+        // This block runs regardless of whether an error occurred or not
+        console.log("All Done!");
+      }
+    };
+
+    const button = document.getElementById("btn-click");
+    button.addEventListener("click", checkAge);
+  </script>
+</body>
+</html>
+```
+
+**Explanation:**
+
+1. The code sets up an HTML form with an input field for entering age, a submit button, and a paragraph element to display error messages.
+
+2. The `checkAge` function is defined to handle the age validation process.
+
+3. Inside the `try` block, the code attempts to convert the input text to an integer using `parseInt()`. If the conversion fails (e.g., when the input is not a number), a custom error is thrown using the `throw` statement.
+
+4. Following that, conditional checks are used to validate the entered age. If the age is not within the specified range (18 to 30), corresponding errors are thrown.
+
+5. The `catch` block captures any thrown errors and displays them in the error paragraph.
+
+6. The `finally` block contains code that will run regardless of whether an error occurred or not. In this case, it logs "All Done!" to the console.
+
+**Key Takeaways:**
+
+- The `try` block contains code that might throw an exception.
+- The `catch` block handles the exception by specifying what actions to take if an error occurs.
+- The `finally` block contains code that is executed regardless of whether an error occurred or not.
+- The `throw` statement is used to manually create and throw custom errors.
+- Error handling helps prevent abrupt program termination and provides a graceful way to handle unexpected situations.
+
+By using `try`, `catch`, `finally`, and `throw`, you can make your code more robust by handling errors and guiding users through potential issues in a user-friendly manner.
+
