@@ -17,6 +17,7 @@ console.log("--------------------------------");
 
 // Asynchronous
 // FETCH IS AN Asynchronous Task.
+// setTimeout is an Asynchronous function which runs the function after a time period and runs it only once.
 
 console.log("Start");
 
