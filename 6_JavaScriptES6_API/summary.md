@@ -276,3 +276,74 @@ const intervalID = setInterval(() => {
 
 Here, the interval increments `num` and logs it every second until `num` reaches 10, at which point the interval is cleared.
 
+
+Absolutely, let's delve into the concepts of the event loop and concurrency using the provided code snippets:
+
+## Event Loop and Concurrency:
+
+**Event Loop:**
+The event loop is a crucial part of JavaScript's runtime environment. It enables asynchronous operations to occur by managing the execution of code that has been delayed or is non-blocking. It's responsible for handling events, such as timers, user interactions, and more.
+
+**Concurrency:**
+Concurrency refers to the ability of a system to handle multiple tasks at the same time. In JavaScript, even though it's single-threaded, the event loop allows the illusion of concurrency by handling asynchronous operations.
+
+Now, let's examine the code snippets to understand how the event loop and concurrency work:
+
+```javascript
+function a() {
+  console.log("a 1");
+  b();
+  console.log("a 2");
+}
+
+function b() {
+  console.log("b 1");
+  d();
+  console.log("b 2");
+}
+
+function d() {
+  console.log("d 1");
+  console.log("d 2");
+}
+
+a();
+```
+
+In this synchronous code, functions are called in sequence. The event loop doesn't play a significant role because everything executes in a linear fashion. The output follows a clear order:
+
+```
+a 1
+b 1
+d 1
+d 2
+b 2
+a 2
+```
+
+Now, let's consider the asynchronous code:
+
+```javascript
+setTimeout(function () {
+  console.log("I am not following the stack.");
+}, 1000);
+
+a();
+```
+
+In this example, the `setTimeout` function sets up an asynchronous operation. It's a timer that waits for 1 second before executing the provided function. While waiting for the timer to finish, the event loop continues to run other code, such as calling the `a()` function.
+
+As a result, the output is not strictly sequential:
+
+```
+a 1
+b 1
+d 1
+d 2
+b 2
+a 2
+I am not following the stack. // Printed after waiting for 1 second
+```
+
+This showcases how the event loop enables the program to continue executing code while waiting for asynchronous operations to complete. It creates an illusion of concurrency, even though JavaScript is single-threaded. The event loop ensures that tasks are executed in the order they were added to the event queue while allowing non-blocking asynchronous operations to run alongside other code.
+
