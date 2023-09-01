@@ -14,6 +14,7 @@
 - [Asynchronous Operations](#asynchronous-operations)
 - [Event Loop and Concurrency](#event-loop-and-concurrency)
 - [Error Handling with Try, Catch, and Finally](#error-handling-with-try-catch-and-finally)
+- [Local Storage](#local-storage)
 
 ## Difference Between `let`, `var`, and `const` in JavaScript
 
@@ -1040,3 +1041,67 @@ In JavaScript, error handling is a crucial aspect of ensuring that your code can
 
 By using `try`, `catch`, `finally`, and `throw`, you can make your code more robust by handling errors and guiding users through potential issues in a user-friendly manner.
 
+## Local Storage
+
+Local Storage is a feature in web development that allows you to store key-value pairs in the user's web browser. It's commonly used for persisting data on the client side, even after the user closes the browser.
+
+### Saving Data in Local Storage
+
+Local Storage stores all data as strings. To clear the current storage, you can use:
+
+```javascript
+localStorage.clear();
+```
+
+To save a key-value pair, use `setItem`. Remember that the value will be stored as a string, so you can save any data type, but it will be converted to a string:
+
+```javascript
+localStorage.setItem("color", "red");
+```
+
+### Retrieving Data from Local Storage
+
+To retrieve the value associated with a key, use `getItem`. It will return a string, so you might need to convert it back to its original data type:
+
+```javascript
+const color = localStorage.getItem("color");
+console.log(color); // "red"
+```
+
+### Removing Data from Local Storage
+
+To remove a key-value pair from Local Storage, use `removeItem`:
+
+```javascript
+localStorage.removeItem("color");
+```
+
+### Storing Non-Primitive Data
+
+Local Storage can store non-primitive data types like arrays and objects, but they will be converted to strings. To store non-primitive data correctly, follow these steps:
+
+#### Incorrect way (don't do this):
+
+```javascript
+localStorage.setItem("arrayOfNumber", [12, 14, 15, 20]);
+localStorage.setItem("AnObject", { name: "John", age: 12 });
+```
+
+#### Correct way:
+
+1. Convert the non-primitive data to a JSON string using `JSON.stringify`.
+
+```javascript
+const productInfo = { name: "Laptop", id: 1 };
+const stringified = JSON.stringify(productInfo);
+localStorage.setItem("productInfo", stringified);
+```
+
+2. When retrieving the data, use `JSON.parse` to convert it back to its original form.
+
+```javascript
+const backToOriginal = JSON.parse(localStorage.getItem("productInfo"));
+console.log(backToOriginal); // { name: "Laptop", id: 1 }
+```
+
+By following these practices, you can effectively use Local Storage to store and retrieve data in your web applications. Remember that the data will persist across sessions and browser restarts until explicitly removed.
