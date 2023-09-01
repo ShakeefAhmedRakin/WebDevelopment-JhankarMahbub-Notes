@@ -34,6 +34,7 @@ The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__titl
 - Milestone Four : [JavaScript](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/4_Javascript/summary.md)
 - Milestone Five : [Document-Object-Model](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/5_DOM/summary.md)
 - Milestone Six : [JavaScriptES6-API](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/6_JavaScriptES6_API/summary.md)
+- Milestone Seven : [React](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub-Notes/blob/main/7_React/summary.md)
 
 
 Feel free to explore the repository to reinforce your understanding of the concepts covered in the course.
