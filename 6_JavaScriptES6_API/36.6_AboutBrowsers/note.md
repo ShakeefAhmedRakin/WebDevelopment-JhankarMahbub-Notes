@@ -48,4 +48,122 @@
 - Provides objects and methods to interact with the browser itself (e.g., opening new windows, managing history).
 - Used for controlling browser behavior and interacting with the user.
 
-In summary, understanding how browsers work, the DOM tree, and the Render Tree is essential for web developers to create efficient and responsive web applications. Additionally, distinguishing between the DOM and BOM helps developers use the right tools for specific tasks.
+# PROMPTS
+
+1. **`confirm` dialog:**
+
+   ```javascript
+   const ready = () => {
+     const value = confirm("Are you ready?");
+
+     if (value) {
+       alert("Okay, Let's go then");
+     } else {
+       alert("Get ready first!");
+     }
+   };
+   ```
+
+   - **Purpose**: The `confirm` dialog is used to ask the user a yes/no question or to confirm an action.
+   - **How it works**:
+     - `confirm("Are you ready?")` displays a dialog box with "OK" and "Cancel" buttons.
+     - If the user clicks "OK," the function returns `true`, and it proceeds to show the "Okay, Let's go then" alert.
+     - If the user clicks "Cancel," the function returns `false`, and it shows the "Get ready first!" alert.
+
+2. **`alert` dialog:**
+
+   ```javascript
+   const alertUser = () => {
+     alert("Alert!! via function");
+   };
+   ```
+
+   - **Purpose**: The `alert` dialog is used to display a message or provide information to the user.
+   - **How it works**:
+     - `alert("Alert!! via function")` displays a dialog box with a message and an "OK" button.
+     - The message provided in the alert dialog is shown to the user, and they can dismiss it by clicking "OK."
+
+3. **`prompt` dialog:**
+
+   ```javascript
+   const getName = () => {
+     const name = prompt("What is your name");
+
+     alert(`Oh, your name is ${name}. Nice!`);
+   };
+   ```
+
+   - **Purpose**: The `prompt` dialog is used to prompt the user to enter some information, typically text input.
+   - **How it works**:
+     - `prompt("What is your name")` displays a dialog box with a text input field and "OK" and "Cancel" buttons.
+     - The user can enter text (their name in this case) into the input field and click "OK."
+     - The entered text is stored in the `name` variable.
+     - An alert is then shown with a message that includes the user's name, like "Oh, your name is John. Nice!"
+
+# LOCATION & HISTORY API
+
+**1. Parts of a URL:**
+
+A URL (Uniform Resource Locator) consists of various components, each serving a specific purpose:
+
+- **Protocol (`https`):** Specifies the communication method for accessing the resource (e.g., HTTP or HTTPS).
+
+- **Hostname (`www.domain.com`):** Identifies the domain or IP address of the server hosting the resource.
+
+- **Port (`:80`):** An optional element indicating the port number for the connection (defaults to 80 for HTTP and 443 for HTTPS).
+
+- **Pathname (`/page/content.php`):** Represents the path to the specific resource or file on the server.
+
+- **Search (`?id=123&name=shoes`):** An optional query string containing parameters used by the server to process the request.
+
+- **Hash (`#top`):** An optional fragment identifier that points to a specific section within the resource.
+
+These parts are essential for constructing and identifying resources on the web.
+
+**2. JavaScript Location Functions:**
+
+JavaScript provides several functions related to the `window.location` object for working with URLs and navigation:
+
+- **`window.location.assign(url)`:** Redirects to the specified URL while keeping a record of the previous URL in the browser's history.
+
+- **`window.location.replace(url)`:** Redirects to the specified URL and replaces the previous URL in the browser's history.
+
+- **`window.location.href = url;`:** Directly assigns a new URL to the current page, triggering navigation.
+
+- **`window.location.reload()`:** Reloads the current page, typically used to refresh content.
+
+- **`window.location.hostname`:** Returns the hostname of the current URL.
+
+- **`window.location.pathname`:** Returns the pathname of the current URL.
+
+- **`window.location.search`:** Returns the query string of the current URL.
+
+- **`window.location.hash`:** Returns the fragment identifier of the current URL.
+
+**3. JavaScript History Functions:**
+
+JavaScript provides history functions for managing the browser's navigation history:
+
+- **`history`:** The `history` object represents the browsing history of the window.
+
+- **`history.back()`:** Navigates back one step in the browsing history (equivalent to clicking the "Back" button).
+
+- **`history.forward()`:** Moves forward one step in the browsing history (equivalent to clicking the "Forward" button).
+
+- **`history.go(n)`:** Allows you to move a specified number of steps in the browsing history, both forward and backward.
+
+- **`history.length`:** Returns the number of entries in the browsing history.
+
+**4. Additional Location Functions:**
+
+- **`window.location.protocol`:** Returns the protocol (e.g., "https:") of the current URL.
+
+- **`window.location.port`:** Returns the port number of the current URL.
+
+**5. Additional History Functions:**
+
+- **`history.state`:** Provides access to the current state object associated with the history entry.
+
+- **`history.pushState(state, title, url)`:** Adds a new state to the browser's history stack, allowing you to change the URL and state without triggering a page load.
+
+- **`history.replaceState(state, title, url)`:** Replaces the current state and URL in the history stack without triggering a page load.
