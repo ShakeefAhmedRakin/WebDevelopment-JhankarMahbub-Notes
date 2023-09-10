@@ -167,3 +167,154 @@ JavaScript provides history functions for managing the browser's navigation hist
 - **`history.pushState(state, title, url)`:** Adds a new state to the browser's history stack, allowing you to change the URL and state without triggering a page load.
 
 - **`history.replaceState(state, title, url)`:** Replaces the current state and URL in the history stack without triggering a page load.
+
+# Lighthouse
+
+**Using Lighthouse to Optimize Page Performance:**
+
+1. **Accessing Lighthouse**:
+
+   - Open Google Chrome.
+   - Right-click on your web page.
+   - Select "Inspect" to open DevTools.
+   - Go to the "Audits" tab.
+
+2. **Running Audits**:
+
+   - Click "Run audits."
+   - Choose the desired audit categories (e.g., Performance, Accessibility, SEO).
+   - Click "Run audits" again.
+
+3. **Viewing Audit Results**:
+   - Lighthouse will analyze your page's performance and generate a report.
+   - Review the scores and recommendations in the report.
+
+**Major Scores and Reports to Be Aware Of:**
+
+1. **Performance Score**:
+
+   - Indicates how well your page performs in terms of loading speed and interactivity.
+   - A higher score means better performance.
+   - Target a high score for optimal user experience.
+
+2. **First Contentful Paint (FCP)**:
+
+   - Measures when the first content appears on the screen.
+   - Aim for a fast FCP to provide users with a visually engaging experience quickly.
+
+3. **Largest Contentful Paint (LCP)**:
+
+   - Measures the loading time of the largest visible content element.
+   - A fast LCP ensures that users see important content promptly.
+
+4. **Total Blocking Time (TBT)**:
+
+   - Evaluates the amount of time when the main thread is blocked and unresponsive to user input.
+   - Lower TBT values lead to better interactivity.
+
+5. **Cumulative Layout Shift (CLS)**:
+
+   - Measures the visual stability of a page as elements shift during loading.
+   - A low CLS score means a more visually stable experience for users.
+
+6. **Opportunities and Diagnostics**:
+
+   - Lighthouse provides specific opportunities and diagnostics for improving performance.
+   - Follow recommendations to address issues like optimizing images, reducing JavaScript, and leveraging browser caching.
+
+7. **Passed Audits**:
+   - Review the list of passed audits to ensure your page meets best practices.
+
+# There is more to the console
+
+**1. `console.assert(condition, message)`**
+
+- **Purpose**: Checks if a given condition is true and logs an error message if it's false.
+- **Usage**: Useful for debugging to validate assumptions in your code.
+- **Example**:
+  ```javascript
+  console.assert(x > 0, "x should be greater than 0");
+  ```
+
+**2. `console.count(label)`**
+
+- **Purpose**: Counts how many times `console.count` with the same label has been called.
+- **Usage**: Helps track how many times a specific code block is executed.
+- **Example**:
+  ```javascript
+  for (let i = 0; i < 5; i++) {
+    console.count("Loop Iteration");
+  }
+  ```
+
+**3. `console.group(label)` and `console.groupEnd()`**
+
+- **Purpose**: Groups console messages together, creating a collapsible block in the console.
+- **Usage**: Organize and structure console output for better readability.
+- **Example**:
+  ```javascript
+  console.group("Function Execution");
+  console.log("Step 1");
+  console.log("Step 2");
+  console.groupEnd();
+  ```
+
+**4. `console.time(label)` and `console.timeEnd(label)`**
+
+- **Purpose**: Measures the time elapsed between `console.time` and `console.timeEnd` calls.
+- **Usage**: Profiling code execution time for performance optimization.
+- **Example**:
+  ```javascript
+  console.time("Function Execution Time");
+  // Code to measure
+  console.timeEnd("Function Execution Time");
+  ```
+
+**5. `monitor(function)` and `unmonitor(function)`**
+
+- **Purpose**: Monitors function calls and logs information when they are executed.
+- **Usage**: Useful for tracking when specific functions are called.
+- **Example**:
+  ```javascript
+  function myFunction() {
+    // Function code
+  }
+  monitor(myFunction);
+  ```
+
+**6. `console.table(data)`**
+
+- **Purpose**: Displays tabular data in the console for easier visualization.
+- **Usage**: Useful for displaying arrays or objects as tables.
+- **Example**:
+  ```javascript
+  const data = [
+    { name: "Alice", age: 30 },
+    { name: "Bob", age: 25 },
+  ];
+  console.table(data);
+  ```
+
+**7. `getEventListeners(element)`**
+
+- **Purpose**: Retrieves a list of event listeners attached to a DOM element.
+- **Usage**: Helpful for debugging event handling.
+- **Example**:
+  ```javascript
+  const button = document.getElementById("myButton");
+  const listeners = getEventListeners(button);
+  console.log(listeners);
+  ```
+
+**8. `debug(function)` and `undebug(function)`**
+
+- **Purpose**: Sets breakpoints in functions to start debugging when the function is called.
+- **Usage**: Helps debug specific functions without stopping execution elsewhere.
+- **Example**:
+  ```javascript
+  function myFunction() {
+    // Function code
+  }
+  debug(myFunction);
+  myFunction(); // Debugging starts when myFunction is called
+  ```
