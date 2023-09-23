@@ -1,0 +1,103 @@
+# Table of Contents
+
+1. [Prop Drilling and Its Disadvantages](#prop-drilling-and-its-disadvantages)
+2. [What is Context API?](#what-is-context-api)
+3. [Creating a Context](#creating-a-context)
+4. [Setting Up a Provider with a Value](#setting-up-a-provider-with-a-value)
+5. [useContext to Access Value in Context API](#usecontext-to-access-value-in-context-api)
+6. [Using useState with the Provider Value](#using-usestate-with-the-provider-value)
+7. [Context API Use Cases](#context-api-use-cases)
+
+## Prop Drilling and Its Disadvantages
+
+**Prop drilling** is a term used in React to describe the process of passing data from a component at the top of the component tree down to a component deep within the tree. This data passing occurs through multiple levels of components, and it can become cumbersome and lead to readability issues as your application grows.
+
+**Disadvantages of Prop Drilling:**
+
+- Reduced code readability: Passing props through multiple intermediate components can make the code harder to understand.
+- Maintenance challenges: When the component hierarchy changes, you need to update all intermediate components that pass props.
+- Can lead to errors: Manually passing props through many levels increases the risk of making mistakes.
+
+## What is Context API?
+
+**Context API** is a built-in feature of React that provides a way to share data between components without having to explicitly pass props through every level of the component tree. It's especially useful for managing application state that needs to be accessed by multiple components.
+
+## Creating a Context
+
+To create a context using the Context API, use the `createContext` function. Here's an example:
+
+```jsx
+import { createContext } from "react";
+
+const MyContext = createContext();
+```
+
+## Setting Up a Provider with a Value
+
+The **Provider** component allows you to wrap parts of your component tree and provide a value that can be accessed by components nested within that tree. Here's how you can set up a provider:
+
+```jsx
+import React from "react";
+import { MyContext } from "./MyContext"; // Import your context
+
+function App() {
+  const value = "Hello, Context API!";
+
+  return (
+    <MyContext.Provider value={value}>
+      {/* Your component tree here */}
+    </MyContext.Provider>
+  );
+}
+```
+
+## useContext to Access Value in Context API
+
+The `useContext` hook is used to access the value provided by the **Provider**. You need to import your context and use it within a component. Here's how to use `useContext`:
+
+```jsx
+import React, { useContext } from "react";
+import { MyContext } from "./MyContext"; // Import your context
+
+function ChildComponent() {
+  const contextValue = useContext(MyContext);
+
+  return <div>{contextValue}</div>;
+}
+```
+
+## Using useState with the Provider Value
+
+You can use `useState` to manage and update the state within the context. Here's an example of how to set up state within a context:
+
+```jsx
+import React, { createContext, useContext, useState } from "react";
+
+const MyContext = createContext();
+
+function MyProvider({ children }) {
+  const [count, setCount] = useState(0);
+
+  return (
+    <MyContext.Provider value={{ count, setCount }}>
+      {children}
+    </MyContext.Provider>
+  );
+}
+```
+
+## Context API Use Cases
+
+**Context API is useful in scenarios where:**
+
+- You have global application state that many components need to access.
+- Prop drilling becomes impractical due to the depth of your component tree.
+- You want to avoid excessive prop passing and make your code more maintainable.
+
+**Common use cases include:**
+
+- Managing authentication and user data.
+- Handling themes and UI preferences.
+- Storing and sharing application-wide data like a shopping cart.
+
+With the Context API, you can efficiently manage shared state and avoid the disadvantages of prop drilling, making your React application more maintainable and scalable.
