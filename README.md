@@ -1,9 +1,8 @@
 # Complete Web Development Course With Jhankar Mahbub - Course Notes
 
 > :warning: All graded assignments will be private until the end of the course.
-> 
-> **To be Noted**<br>
-> _The content in this repository does not contain any content or media from the course itself. Therefore, it is not a substitute for the official course materials provided by Programming Hero. The materials and notes in this repository are based on my personal learning journey and are intended for educational purposes only._
+>
+> **To be Noted**<br> > _The content in this repository does not contain any content or media from the course itself. Therefore, it is not a substitute for the official course materials provided by Programming Hero. The materials and notes in this repository are based on my personal learning journey and are intended for educational purposes only._
 
 ![image](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/assets/112527326/b62607bc-c2c2-45ee-a9f1-b2acb742ce02)
 
@@ -26,7 +25,7 @@ The course is structured using milestones that have various modules to provide a
 ## Repository Contents
 
 This repository is a collection of my notes, code snippets, and links to my project implementations based on the course curriculum. Each milestone has modules in them. <br>
-The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__title_". <br>
+The folders are named as **milestone_number**\_title > **module_number**\_title
 
 - Milestone One : [HTML-CSS-GITHUB](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/1_HTML_CSS_GITHUB/summary.md)
 - Milestone Two : [Responsive-Web-Layout](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/2_Responsive_Web_Layout/summary.md)
@@ -36,7 +35,8 @@ The folders are named as "**milestoneNumber**__title_" > "**moduleNumber**__titl
 - Milestone Six : [JavaScriptES6-API](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub/blob/main/6_JavaScriptES6_API/summary.md)
 - Milestone Seven : [React](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub-Notes/tree/main/7_React)
 - Milestone Eight : [React Router](https://github.com/ShakeefAhmedRakin/WebDevelopment-JhankarMahbub-Notes/tree/main/8_React_Router_States)
-
+- Milestone Nine : React Authentication **( Will be updated soon )**
+- Milestone Ten : Backend and Database
 
 Feel free to explore the repository to reinforce your understanding of the concepts covered in the course.
 
